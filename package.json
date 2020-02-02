@@ -1,0 +1,43 @@
+{
+  "name": "@bark-shell/react",
+  "version": "0.1.0",
+  "description": ":tennis: Bark Shell Implement for React",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barksh/Bark-Shell-React.git"
+  },
+  "keywords": [
+    "bark-shell"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barksh/Bark-Shell-React/issues"
+  },
+  "homepage": "https://github.com/barksh/Bark-Shell-React#readme",
+  "dependencies": {
+    "@bark-shell/web": "^0.1.0"
+  },
+  "devDependencies": {
+    "@sudoo/io": "^1.6.2",
+    "@sudoo/triforce": "^2.1.0"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "require": [
+      "./test/tshook.js"
+    ],
+    "sourceMap": true
+  }
+}
